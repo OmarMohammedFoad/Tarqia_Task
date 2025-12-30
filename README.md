@@ -4,13 +4,40 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
+## Features
+
+- **2-Column Grid UI**: Optimized product display using a responsive grid layout.
+- **Dark Mode Support**: Global theme management using **React Context API**.
+- **Local Persistence**: Full offline support using `@react-native-async-storage/async-storage` to cache API responses.
+- **Robust Error Handling**:
+  - **Local State**: Handles API failures and loading states.
+  - **Global Error Boundary**: Custom fallback UI to prevent app crashes during rendering.
+- **Navigation**: Seamless transitions between Home and Product Details using **React Navigation Stack**.
+```sh
+
+
+
+
+Project Structure
+
+```text
+src/
+ ├── assets/             # Images and local webp assets
+ ├── components/         # Reusable UI (ErrorComponent, Cards)
+ ├── context/            # DarkMode (Dark/Light mode logic)
+ ├── navigation/         # AppNavigator configuration
+ ├── screens/            # Main screens (HomeScreen, DetailsScreen)
+ ├── services/           # Storage
+ └── types/              # TypeScript Interfaces (PostItem, RootStackParamList)
+
+
+
 ## Step 1: Start Metro
 
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
 
 To start the Metro dev server, run the following command from the root of your React Native project:
 
-```sh
 # Using npm
 npm start
 
