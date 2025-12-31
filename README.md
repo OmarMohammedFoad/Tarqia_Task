@@ -23,7 +23,7 @@ Project Structure
 ```text
 src/
  ├── assets/             # Images and local webp assets
- ├── components/         # Reusable UI (ErrorComponent, Cards)
+ ├── components/         # Reusable UI (ErrorComponent)
  ├── context/            # DarkMode (Dark/Light mode logic)
  ├── navigation/         # AppNavigator configuration
  ├── screens/            # Main screens (HomeScreen, DetailsScreen)
